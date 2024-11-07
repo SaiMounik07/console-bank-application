@@ -36,6 +36,7 @@ public class Customer {
                     break;
                 case 4:
                     System.out.println("Exiting Customer Menu.");
+
                     return;
                 default:
                     System.out.println("Invalid option. Please try again.");

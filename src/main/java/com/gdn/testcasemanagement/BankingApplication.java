@@ -1,9 +1,10 @@
 package com.gdn.testcasemanagement;
 
+import java.sql.*;
 import java.util.Scanner;
 
 public class BankingApplication {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         Scanner scanner = new Scanner(System.in);
 
         BankAccount account = new BankAccount("12345", "sai");
@@ -11,6 +12,18 @@ public class BankingApplication {
 
         BankManager bankManager = new BankManager();
         bankManager.addAccount(account);
+//        String query="Select * from tab";
+//        String url="jdbc:mysql://localhost:3306/test";
+//        String username="root";
+//        String password="rootroot";
+//
+//
+//        Connection connection= DriverManager.getConnection(url,username,password);
+//        Statement statement=connection.createStatement();
+//        ResultSet resultSet=statement.executeQuery(query);
+//        resultSet.next();
+//        int a=resultSet.getInt("per");
+//        System.out.println(a);
 
         while (true) {
             System.out.println("\nBanking Application Login:");

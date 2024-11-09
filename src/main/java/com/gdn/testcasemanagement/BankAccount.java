@@ -4,7 +4,9 @@ public class BankAccount {
     private String accountNumber;
     private String accountHolderName;
     private double balance;
+    public BankAccount(){
 
+    }
     public BankAccount(String accountNumber, String accountHolderName) {
         this.accountNumber = accountNumber;
         this.accountHolderName = accountHolderName;
@@ -50,4 +52,6 @@ public class BankAccount {
     public double getBalance() {
         return balance;
     }
+
+
 }

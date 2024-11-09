@@ -12,18 +12,26 @@ public class BankingApplication {
 
         BankManager bankManager = new BankManager();
         bankManager.addAccount(account);
-//        String query="Select * from tab";
+//        int num=1;
+//        String query="Select * from tab where per = ?";
 //        String url="jdbc:mysql://localhost:3306/test";
 //        String username="root";
 //        String password="rootroot";
 //
 //
-//        Connection connection= DriverManager.getConnection(url,username,password);
-//        Statement statement=connection.createStatement();
-//        ResultSet resultSet=statement.executeQuery(query);
-//        resultSet.next();
-//        int a=resultSet.getInt("per");
-//        System.out.println(a);
+//             Connection connection = DriverManager.getConnection(url, username, password);
+//             PreparedStatement statement = connection.prepareStatement(query) ;
+//             statement.setInt(1, num);
+//             ResultSet resultSet = statement.executeQuery();
+//             while (resultSet.next()) {
+//                int name = resultSet.getInt("per");
+//                System.out.println("Name: " + name);
+//            }
+
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//            System.out.println("SQL Exception: " + e.getMessage());
+//        }
 
         while (true) {
             System.out.println("\nBanking Application Login:");
